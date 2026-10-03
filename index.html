@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Happy Birthday, Baby ❤️</title>
+<style>
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;min-height:100vh;overflow-x:hidden;font-family:Georgia,"Times New Roman",serif;color:#fff;background:radial-gradient(circle at 20% 20%,#461b4c,transparent 35%),radial-gradient(circle at 80% 80%,#351947,transparent 35%),linear-gradient(135deg,#08050d,#150914,#08050d)}
+#start{position:fixed;inset:0;z-index:1000;display:grid;place-items:center;text-align:center;background:radial-gradient(circle,#29102d,#08050d 70%);transition:1s}
+#start.hide{opacity:0;visibility:hidden;pointer-events:none}.start{padding:30px}.start .cake{font-size:6rem;filter:drop-shadow(0 0 25px rgba(255,130,200,.4));animation:float 2.5s ease-in-out infinite}.start h1{font-size:clamp(2.2rem,8vw,4rem);color:#ff9bd2;margin:20px 0 10px}.start p{color:#aaa;font-family:Arial,sans-serif}.btn{margin-top:30px;padding:15px 35px;border:1px solid #ff8bc9;border-radius:50px;background:#ffffff12;color:#fff;font-size:1rem;cursor:pointer}.btn:hover{background:#ff8bc9}
+.stars{position:fixed;inset:0;pointer-events:none}.star{position:absolute;width:3px;height:3px;border-radius:50%;background:#fff;opacity:.5;animation:twinkle 3s infinite}
+main,.cake-section,.gift-section{position:relative;z-index:2}.hero{min-height:100vh;display:grid;place-items:center;text-align:center;padding:30px 20px}.content{max-width:760px;animation:fade 1.5s ease}.tiny{text-transform:uppercase;letter-spacing:5px;font-size:12px;color:#ff9bd2;margin-bottom:25px}.hero h1{font-size:clamp(3.5rem,12vw,7rem);line-height:.9;margin:0 0 25px}.hero h1 span{display:block;color:#ff8bc9;text-shadow:0 0 15px #ff8bc980}.message{max-width:650px;margin:auto;font-size:1.15rem;line-height:1.85;color:#eee}.message p{margin:0 0 18px}.scroll{margin-top:45px;color:#aaa;font:13px Arial,sans-serif;animation:bounce 2s infinite}
+.cake-section{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:60px 20px}.cake-section h2,.gift-section h2{font-size:clamp(2rem,7vw,3.5rem);margin:0 0 10px}.cake-section h2 span,.gift-section h2 span{color:#ff8bc9}.cake-subtitle,.gift-instruction{color:#aaa;font:15px Arial,sans-serif}.cake{position:relative;width:220px;height:180px;margin:55px auto}.cake-body{position:absolute;bottom:0;left:10px;width:200px;height:100px;border-radius:10px 10px 25px 25px;background:linear-gradient(#ff9acb,#d85c9d);box-shadow:0 15px 35px #0008}.cake-top{position:absolute;top:55px;left:10px;width:200px;height:45px;border-radius:50%;background:#ffc4df;z-index:2}.icing{position:absolute;top:78px;left:20px;width:180px;height:40px;background:#fff0f7;border-radius:0 0 40px 40px;z-index:3}.drip{position:absolute;width:18px;height:30px;border-radius:0 0 15px 15px;background:#fff0f7}.drip:nth-child(1){left:35px}.drip:nth-child(2){left:75px;height:22px}.drip:nth-child(3){left:120px;height:32px}.drip:nth-child(4){left:155px;height:20px}.age{position:absolute;top:95px;left:0;width:220px;z-index:10;text-align:center;font-size:3rem;font-weight:bold;color:#8c285f}.candle{position:absolute;top:10px;width:14px;height:50px;border-radius:4px;background:repeating-linear-gradient(45deg,#ff8bc9 0 7px,#fff 7px 12px);z-index:8}.candle.one{left:75px}.candle.two{left:130px}.flame{position:absolute;top:-25px;left:2px;width:10px;height:20px;background:#ffd86b;border-radius:50%;box-shadow:0 0 15px #ffb52e;animation:flame .8s infinite alternate}
+.gift-section{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:40px 20px;text-align:center}.gift{font-size:8rem;cursor:pointer;margin-top:25px;transition:.4s}.gift:hover{transform:scale(1.15) rotate(-5deg)}.gift.opened{animation:gift .7s}.letter{display:none;max-width:650px;margin-top:35px;padding:40px 30px;border-radius:25px;background:#ffffff12;border:1px solid #ff8bc94d;box-shadow:0 20px 80px #0006;backdrop-filter:blur(15px)}.letter.show{display:block;animation:letter 1s}.letter-title{color:#ff9bd2;font-size:1.7rem;margin-bottom:25px}.letter p{font-size:1.2rem;line-height:2;color:#f1f1f1}.signature{margin-top:30px;color:#ff9bd2;font-style:italic}
+.heart{position:fixed;bottom:-30px;z-index:10;pointer-events:none;animation:up linear forwards}footer{position:relative;z-index:2;text-align:center;padding:50px 20px 70px;color:#777;font:13px Arial,sans-serif}footer span{color:#ff8bc9}
+@keyframes twinkle{0%,100%{opacity:.2;transform:scale(1)}50%{opacity:1;transform:scale(1.7)}}@keyframes fade{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:none}}@keyframes float{50%{transform:translateY(-12px)}}@keyframes bounce{50%{transform:translateY(8px)}}@keyframes flame{to{transform:scale(1.2) rotate(3deg)}}@keyframes gift{50%{transform:scale(1.35) rotate(5deg)}}@keyframes letter{from{opacity:0;transform:translateY(30px) scale(.95)}to{opacity:1;transform:none}}@keyframes up{0%{transform:translateY(0);opacity:0}10%{opacity:1}100%{transform:translateY(-110vh) rotate(360deg);opacity:0}}
+@media(max-width:600px){.message{font-size:1.05rem}.gift-section h2{font-size:2rem}.gift{font-size:6rem}.letter{padding:30px 22px}.letter p{font-size:1.05rem}}
+</style>
+</head>
+<body>
+
+<div id="start"><div class="start"><div class="cake">🎂</div><h1>A little surprise<br>for Baby ❤️</h1><p>I made something for you...</p><button class="btn" onclick="startBirthday()">Tap to enter 🎂</button></div></div>
+
+<audio id="music" loop><source src="happy-birthday.mp3" type="audio/mpeg"></audio>
+<div class="stars" id="stars"></div>
+
+<main class="hero"><div class="content">
+<div class="tiny">Today is your day ❤️</div>
+<h1>Happy Birthday<span>Baby ❤️</span></h1>
+<div class="message">
+<p>Happy Birthday to the only man I enjoy laughing with and at😂❤️</p>
+<p>Hope you enjoy your day. And I know you miss me 😌</p>
+<p>You're my very special guy. Not only are you just a boyfriend, but you're also my best friend.</p>
+<p>The bones are getting stiff, of course. 😂 But I'm happy to see you grow into a fine man❤️</p>
+</div>
+<div class="scroll">↓ There's a little something waiting for you ↓</div>
+</div></main>
+
+<section class="cake-section">
+<h2>Look who's <span>24 🎂</span></h2>
+<p class="cake-subtitle">Happy 24th Birthday, Sim ❤️</p>
+<div class="cake">
+<div class="candle one"><div class="flame"></div></div><div class="candle two"><div class="flame"></div></div>
+<div class="cake-top"></div><div class="cake-body"></div>
+<div class="icing"><div class="drip"></div><div class="drip"></div><div class="drip"></div><div class="drip"></div></div>
+<div class="age">24</div>
+</div>
+</section>
+
+<section class="gift-section">
+<h2>I got you a little <span>something...</span></h2>
+<p class="gift-instruction">Tap the gift, baby 🎁</p>
+<div class="gift" id="gift" onclick="openGift()">🎁</div>
+<div class="letter" id="letter">
+<div class="letter-title">Your actual gift ❤️</div>
+<p>My gift to you is a meal of your choice cooked by me.<br><br>No complaints.<br><br>And on the day I see you, you can ask me to do anything and I can't say no🥲</p>
+<div class="signature">Happy Birthday, Baby ❤️</div>
+</div>
+</section>
+
+<footer>Made especially for <span>Sim</span> ❤️</footer>
+
+<script>
+function startBirthday(){
+  document.getElementById("start").classList.add("hide");
+  const m=document.getElementById("music");m.volume=.45;m.play().catch(()=>{});
+  hearts(15);
+}
+const stars=document.getElementById("stars");
+for(let i=0;i<100;i++){const s=document.createElement("div");s.className="star";s.style.left=Math.random()*100+"%";s.style.top=Math.random()*100+"%";s.style.animationDelay=Math.random()*3+"s";stars.appendChild(s)}
+function openGift(){
+  document.getElementById("gift").classList.add("opened");
+  setTimeout(()=>{const l=document.getElementById("letter");l.classList.add("show");l.scrollIntoView({behavior:"smooth",block:"center"})},400);
+  hearts(25);
+}
+function hearts(n){
+  const a=["❤️","💕","💗","💖","💘","🥰"];
+  for(let i=0;i<n;i++){const h=document.createElement("div");h.className="heart";h.innerHTML=a[Math.floor(Math.random()*a.length)];h.style.left=Math.random()*100+"vw";h.style.fontSize=16+Math.random()*25+"px";h.style.animationDuration=3+Math.random()*4+"s";document.body.appendChild(h);setTimeout(()=>h.remove(),7000)}
+}
+setInterval(()=>hearts(1),1200);
+</script>
+</body>
+</html>
